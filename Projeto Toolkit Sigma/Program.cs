@@ -1,5 +1,4 @@
-﻿
-public class Program
+﻿public class Program
 {
     public static void Main(string[] args)
     {
@@ -14,11 +13,16 @@ public class Program
             Console.WriteLine("3) Decisor: termina com 'b'?");
             Console.WriteLine("4) Avaliador proposicional (P,Q,R)");
             Console.WriteLine("5) Reconhecedor: L_par_a e a b*");
+            Console.WriteLine("6) Problema × Instância por JSON");
+            Console.WriteLine("7) Decisores (L_fim_b e L_mult3_b) ");
+            Console.WriteLine("8) Reconhecedor (pode não terminar) ");
+            Console.WriteLine("9) Detector ingênuo de loop + reflexão ");
+            Console.WriteLine("10) Simulador de AFD de casos fixos ");
             Console.WriteLine("----------------------------------------");
             Console.WriteLine("0) Sair");
             Console.WriteLine("========================================");
 
-            int opcaoEscolhida = LerOpcaoDoMenu(0, 5);
+            int opcaoEscolhida = LerOpcaoDoMenu(0, 10);
             Console.WriteLine();
 
             if (opcaoEscolhida == 0) return;
@@ -29,6 +33,11 @@ public class Program
             if (opcaoEscolhida == 3) new Programa3().Executar();
             if (opcaoEscolhida == 4) new Programa4().Executar();
             if (opcaoEscolhida == 5) new Programa5().Executar();
+            if (opcaoEscolhida == 6) new Programa6().Executar();
+            if (opcaoEscolhida == 7) new Programa7().Executar();
+            if (opcaoEscolhida == 8) new Programa8().Executar();
+            if (opcaoEscolhida == 9) new Programa9().Executar();
+            if (opcaoEscolhida == 10) new Programa10().Executar();
 
             Console.WriteLine("\nPressione qualquer tecla para voltar ao menu...");
             Console.ReadKey();
