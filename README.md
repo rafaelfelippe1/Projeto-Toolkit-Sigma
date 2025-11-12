@@ -70,7 +70,17 @@ O toolkit é composto por um menu principal que dá acesso às seguintes ferrame
     * Possui limite de passos configurável
     * Exibe, ao final, uma reflexão sobre falsos positivos/negativos
 
-Baseado no experimento apresentado na apostila para a aula de verificação formal.
+10.  **Simulador de AFD (Autômato Finito Determinístico)**
+
+  Um módulo que implementa um AFD simples com:<br>
+    * Estados<br>
+    * Estado inicial<br>
+    * Estados finais<br>
+    * Função de transição δ<br>
+<br>
+  Ao executar uma cadeia sobre Σ = {a, b}, o programa:<br>
+    * Mostra o estado atual a cada símbolo<br>
+    * Indica ao final se a cadeia foi ACEITA ou REJEITADA<br>
 
 ## 🚀 Tecnologias Utilizadas
 
